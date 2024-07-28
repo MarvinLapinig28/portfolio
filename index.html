@@ -23,6 +23,7 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -105,7 +106,7 @@
               </div>
             </div>
             <p>
-              To apply my expertise in data engineering and graphic designing and have the expertise to create cutting-edge solutions that optimize data-driven processes. Leveraging my proficiency in programming languages like Pyhton, PHP and others, I 
+              To apply my expertise in data engineering and graphic designing and have the expertise to create cutting-edge solutions that optimize data-driven processes. Leveraging my proficiency in programming languages like Python, PHP and others, I 
               design efficient data architectures to develop high-performance systems. Additionally, I have extensive experience in database design, coding, and optimization and experienced graphic 
               designer, web developer, and database administrator, I am confident that I can contribute to your team's success.
             </p>
@@ -192,7 +193,7 @@
             </div>
 
             <div class="progress">
-              <span class="skill">Pyhton<i class="val">85%</i></span>
+              <span class="skill">Python<i class="val">85%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -692,7 +693,7 @@
               </div>
               <div class="my-3">
               </div>
-              <div class="text-center"><button type="submit" >Send Message</button ></div>
+              <div class="text-center"><button type="submit" id="click" >Send Message</button ></div>
             </form>
 
           </div>
@@ -738,9 +739,19 @@
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    $('#click').on('click',function(){
+              Swal.fire({
+          title: "Still Working",
+          
+          icon: "success"
+        });
+    })
+  </script>
 
 </body>
 
